@@ -3,6 +3,7 @@
 /* testing styling */
 
 .border {border: 1px solid #d6d6d6;}
+.border-top{border-top: 1px solid #E9EAEB;}
 
 /* global styling */
 :root {
@@ -12,6 +13,7 @@
     --gray-color-light: #535862;
     --gray-color-extra-light: #717680;
     --color-darkblue: #181D27;
+    --color-lightpurple: #E9D7FE;
 
     --box-shadow-1: 0px 1px 2px 0px #0A0D120D;
 
@@ -90,9 +92,13 @@ h1 {font-weight: 600;font-size: 48px;line-height: 60px;letter-spacing: -2%;}
 .mr-12 {margin-right: 12px;}
 .mb-4 {margin-bottom: 4px;}
 .py-96 {padding-top: 96px; padding-bottom: 96px;}
+.mr-96 {margin-right: 96px;}
 .mt-120 {margin-top: 120px;}
 .mt-32 {margin-top: 32px;}
 .mb-32 {margin-bottom:32px;}
+.pt-64 {padding-top:64px;}
+.pb-64 {padding-bottom:64px;}
+.pt-32 {padding-top: 32px;}
 
 /* display properties styling */
 .inline {display:inline;}
@@ -123,15 +129,20 @@ h1 {font-weight: 600;font-size: 48px;line-height: 60px;letter-spacing: -2%;}
 /* colors styling */
 .text-primary-color {color: var(--gray-color-light);}
 .text-secondary-color {color: var(--primary-purple-color);}
+.text-white {color: var(--white-color)}
 .text-darkblue {color: var(--color-darkblue);}
+.text-lightpurple {color: var(--color-lightpurple);}
 
 .bg-gray {background: #FAFAFA;}
 .bg-white {background: var(--white-color);}
+.bg-primary {background: #53389E;}
+
+/* .fw-500 {font-weight: 700;} */
 
 /* paragraphs styling */
 .text-primary {font-weight: 400;font-size: var(--fs-14);line-height: var(--lh-20); letter-spacing:0.2px;}
 .text-secondary {font-weight: 600;font-size: var(--fs-14);line-height: var(--lh-20);}
-.text-primary-lg {font-weight: 400;font-size: var(--fs-20);line-height: var(--lh-30); letter-spacing:0.2px;}
+.text-primary-lg {font-weight: 500;font-size: var(--fs-20);line-height: var(--lh-30); letter-spacing:0.2px;}
 .text-primary-md {font-weight: 400;font-size: var(--fs-16);line-height: var(--lh-24); letter-spacing:0.2px;}
 
 .heading-primary {font-weight: 500; font-size: var(--fs-20); line-height: var(--lh-30); text-align: center;}
@@ -144,8 +155,9 @@ h1 {font-weight: 600;font-size: 48px;line-height: 60px;letter-spacing: -2%;}
 .container-sm {max-width: 640px;}
 
 /* input styling */
-input[type="text"]:focus {outline:none;}
-input[type="text"] {
+input[type="text"]:focus, input[type="email"]:focus {outline:none;}
+input[type="text"],
+input[type="email"] {
     appearance: none;
     font-weight: 400;
     font-size: var(--fs-16);
@@ -197,6 +209,23 @@ nav {
     padding-top: 14px;
     padding-bottom: 14px;
     border-bottom: 1px solid #F5F5F5;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+}
+footer ul li:not(:first-child) a {
+    padding-left: 14px;
+}
+footer ul li:not(:last-child) a {
+    padding-right: 14px; 
+}
+footer ul li a {   
+    font-weight: 600;
+    text-decoration: none;
+    font-size: var(--fs-15);
+    line-height: var(--lh-24);
+    color: var(--gray-color-light);
 }
 nav .main-navigation ul li a:not(.text-secondary) {
     padding-right: 14px; 

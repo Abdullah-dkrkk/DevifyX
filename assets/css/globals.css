@@ -3,7 +3,6 @@
 /* testing styling */
 
 .border {border: 1px solid #d6d6d6;}
-.border-top{border-top: 1px solid #E9EAEB;}
 
 /* global styling */
 :root {
@@ -118,7 +117,6 @@ h1 {font-weight: 600;font-size: 48px;line-height: 60px;letter-spacing: -2%;}
 .grid-gap-32 {grid-gap: 32px;}
 .grid-col-3{grid-template-columns: 1fr 1fr 1fr;}
 .grid-col-6{grid-template-columns: 1fr 1fr 1fr;}
-/* .grid-row-2{grid-template-columns: 1fr 1fr 1fr;} */
 .grid-col-2{grid-template-columns: 1fr 1fr;}
 .grid-grow-2 {grid-column-start: 2; grid-column-end: 4;}
 .grid-row-2{grid-template-rows: 1fr 1fr;}
@@ -155,9 +153,11 @@ h1 {font-weight: 600;font-size: 48px;line-height: 60px;letter-spacing: -2%;}
 .container-sm {max-width: 640px;}
 
 /* input styling */
-input[type="text"]:focus, input[type="email"]:focus {outline:none;}
+input:focus {outline:none;}
+input[type="email"],
 input[type="text"],
-input[type="email"] {
+input[type="search"],
+input[type="password"] {
     appearance: none;
     font-weight: 400;
     font-size: var(--fs-16);
@@ -205,6 +205,7 @@ input[type="email"] {
 }
 
 /* navbar styling */
+
 nav {
     padding-top: 14px;
     padding-bottom: 14px;

@@ -4,3 +4,10 @@
 .my-24 {margin-top: 24px; margin-bottom: 24px;}
 form label {font-weight: 500;font-size: var(--fs-14);line-height: 20px;}
 form input[type="password"],form input {border: 1px solid #D5D7DA; box-shadow: var(--box-shadow-1); padding: 10px 14px; color: #717680;}
+
+/* checkbox styling */
+.custom-checkbox input[type="checkbox"] {display: none;}
+.custom-checkbox .checkmark {display: inline-block;width: 18px;height: 18px;background-color: #fff;border: 1px solid #D5D7DA;border-radius: 5px;position: relative;box-shadow: var(--box-shadow-1);margin-right: 8px;vertical-align: middle;cursor: pointer;}
+.custom-checkbox:hover .checkmark {border-color: var(--primary-purple-color);}
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {background-color: var(--primary-purple-color);border-color: var(--primary-purple-color);}
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {content: '';position: absolute;top: 0.213em;left: 0.392em;width: 3px;height: 7px;border: 2px solid #fff;border-width: 0 2px 2px 0;transform: rotate(45deg);}

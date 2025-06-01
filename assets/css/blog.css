@@ -1,0 +1,4 @@
+.min-w-475 {min-width: 475px;}
+.main-recent-card-wrapper {box-shadow: var(--box-shadow-2);}
+.load-btn-wrapper a {min-width: 180px;}
+.load-btn-wrapper a img {filter: brightness(0) invert(1);}

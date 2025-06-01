@@ -15,6 +15,9 @@
     --color-lightpurple: #E9D7FE;
 
     --box-shadow-1: 0px 1px 2px 0px #0A0D120D;
+    --box-shadow-2: 0px 4px 6px -2px #0A0D1208,
+                    0px 12px 16px -4px #0A0D1214;
+
 
     --radius-8: 8px;
     --radius-16: 16px;
@@ -71,9 +74,11 @@ h1 {font-weight: 600;font-size: 48px;line-height: 60px;letter-spacing: -2%;}
 .px-20 {padding-right: 20px; padding-left: 20px;}
 .mt-60 {margin-top: 60px;}
 .mb-60 {margin-bottom: 60px;}
+.mb-120 {margin-bottom: 120px;}
 .mb-20 {margin-bottom: 20px;}
 .p-32 {padding:32px;}
 .p-28 {padding:28px;}
+.p-24 {padding: 24px;}
 .py-8 {padding-top: 8px; padding-bottom: 8px;}
 .py-12 {padding-top: 12px; padding-bottom: 12px;}
 .mr-8 {margin-right: 8px;}
@@ -136,7 +141,8 @@ h1 {font-weight: 600;font-size: 48px;line-height: 60px;letter-spacing: -2%;}
 .bg-white {background: var(--white-color);}
 .bg-primary {background: #53389E;}
 
-/* .fw-500 {font-weight: 700;} */
+.fw-700 {font-weight: 700 !important;}
+.fw-600 {font-weight: 600 !important;}
 .fw-400 {font-weight: 400 !important;}
 
 /* paragraphs styling */

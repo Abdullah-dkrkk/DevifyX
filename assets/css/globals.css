@@ -89,6 +89,7 @@ h1 {font-weight: 600;font-size: 48px;line-height: 60px;letter-spacing: -2%;}
 .ml-24 {margin-left: 24px;}
 .mr-16 {margin-right: 16px;}
 .mr-12 {margin-right: 12px;}
+.mr-16 {margin-right: 16px;}
 .mb-4 {margin-bottom: 4px;}
 .py-96 {padding-top: 96px; padding-bottom: 96px;}
 .mr-96 {margin-right: 96px;}
@@ -136,6 +137,7 @@ h1 {font-weight: 600;font-size: 48px;line-height: 60px;letter-spacing: -2%;}
 .bg-primary {background: #53389E;}
 
 /* .fw-500 {font-weight: 700;} */
+.fw-400 {font-weight: 400 !important;}
 
 /* paragraphs styling */
 .text-primary {font-weight: 400;font-size: var(--fs-14);line-height: var(--lh-20); letter-spacing:0.2px;}

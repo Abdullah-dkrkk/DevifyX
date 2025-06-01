@@ -27,12 +27,14 @@
     --fs-14: 14px;
     --fs-15: 15px;
     --fs-16: 16px;
+    --fs-18: 18px;
     --fs-24: 24px;
     --fs-20: 20px;
     --fs-36: 36px;
 
     --lh-24: 24px;
     --lh-30: 30px;
+    --lh-28: 28px;
     --lh-20: 20px;
     --lh-32: 32px;
     --lh-44: 44px;
@@ -114,6 +116,7 @@ h1 {font-weight: 600;font-size: 48px;line-height: 60px;letter-spacing: -2%;}
 .flex-c {flex-direction:column;}
 .justify-c {justify-content:center;}
 .gap-8 {gap: 8px;}
+.gap-12 {gap: 12px;}
 .gap-64 {gap:64px;}
 .grid-row-gap-48{grid-row-gap: 48px;}
 .grid-col-gap-32{grid-column-gap: 32px;}

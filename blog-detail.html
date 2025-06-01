@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevifyX | Homepage</title>
+
+    <!-- navbar -->
+    <link rel="stylesheet" href="./assets/css/vgnav-theme.css">
+    <link rel="stylesheet" href="./assets/css/vgnav.css">
+
+    <!-- global styling -->
+    <link rel="stylesheet" href="./assets/css/globals.css">
+    <link rel="stylesheet" href="./assets/css/blog-detail.css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container container-xl flex align-c justify-c justify-b">
+            <img src="./assets/images/logo.svg" alt="Main Logo">
+            <div class="vg-nav main-navigation">
+                <ul class="vg-nav-wrapper flex align-c justify-c">
+                    <li><a href="javascript:void(0);">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="flex align-c justify-c">
+                            <span class="with-chevron-down">
+                                How it works
+                            </span>
+                            <img src="./assets/images/icons/chevron-down.svg" class="chevron-down" alt="Chevron Down">
+                        </a>
+                        <ul class="left">
+                            <li><a href="javascript:void(0);">For Sales Agents</a></li>
+                            <li><a href="javascript:void(0);">For Developers</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-mega" style="display:none;">
+                        <a href="/">Mega </a>
+                        <div class="dropdown-mega-container">
+                            <div class="row">
+                            <div class="col-md-4 text-left">
+                                Left
+                            </div>
+                            <div class="col-md-4 text-center">
+                                Center
+                            </div>
+                            <div class="col-md-4 text-right">
+                                Right
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown" style="display:none;">
+                        <a href="javascript:void(0);">Right dropdown</a>
+                        <ul class="right">
+                            <li><a href="/">Any page</a></li>
+                            <li class="dropdown">
+                            <a href="javascript:void(0);">Second level</a>
+                            <ul class="right">
+                                <li><a href="/">Another page</a></li>
+                                <li><a href="/">Any page</a></li>
+                                <li class="dropdown">
+                                <a href="javascript:void(0);">Third level</a>
+                                <ul class="right">
+                                    <li><a href="/">Any page</a></li>
+                                    <li><a href="/">Another page</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                            </li>
+                            <li><a href="/">Another page</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);">Success Stories</a></li>
+                    <li><a href="javascript:void(0);">FAQs</a></li>
+                    <li class="dropdown-mega">
+                        <a href="javascript:void(0);" class="flex align-c justify-c">
+                            <span class="with-chevron-down">
+                                Blogs
+                            </span>
+                            <img src="./assets/images/icons/chevron-down.svg" class="chevron-down" alt="Chevron Down">
+                        </a>
+                        <div class="dropdown-mega-container">
+                            <div class="row grid grid-col-3">
+                                <div class="text-primary bg-white text-primary-color p-32">
+                                    <p class="text-secondary text-secondary-color mb-12 px-12">Resources</p>
+                                    <div class="resources-list-items-wrapper">
+                                        <div class="resources-list-item mb-8 flex align-s justify-s p-12">
+                                            <img src="./assets/images/icons/book.svg" alt="Book Icon" class="mr-16">
+                                            <div class="resource-list-item-content">
+                                                <h5 class="text-darkblue mb-4">Resources</h5>
+                                                <p class="text-primary text-primary-color">The latest industry news, updates and info.</p>
+                                            </div>
+                                        </div>
+                                        <div class="resources-list-item mb-8 flex align-s justify-s p-12">
+                                            <img src="./assets/images/icons/zap.svg" alt="Book Icon" class="mr-16">
+                                            <div class="resource-list-item-content">
+                                                <h5 class="text-darkblue mb-4">Customer stories</h5>
+                                                <p class="text-primary text-primary-color">Learn how our customers are making big changes.</p>
+                                            </div>
+                                        </div>
+                                        <div class="resources-list-item mb-8 flex align-s justify-s p-12">
+                                            <img src="./assets/images/icons/play-circle.svg" alt="Book Icon" class="mr-16">
+                                            <div class="resource-list-item-content">
+                                                <h5 class="text-darkblue mb-4">Video tutorials</h5>
+                                                <p class="text-primary text-primary-color">Get up and running on new features and techniques.</p>
+                                            </div>
+                                        </div>
+                                        <div class="resources-list-item flex align-s justify-s p-12">
+                                            <img src="./assets/images/icons/file.svg" alt="Book Icon" class="mr-16">
+                                            <div class="resource-list-item-content">
+                                                <h5 class="text-darkblue mb-4">Documentation</h5>
+                                                <p class="text-primary text-primary-color">All the boring stuff that you (hopefully won’t) need.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-grow-2 bg-gray p-32">
+                                    <p class="text-secondary text-secondary-color mb-12 px-12">Latest blog posts</p>
+                                    <div class="blogs-list-items-wrapper mb-16">
+                                        
+                                        <!-- blog 1 -->
+                                        <div class="blogs-list-item flex align-c justify-s p-12 px-0 mb-12">
+                                            <img src="./assets/images/blog-1.png" alt="First Blog Image" class="mr-16">
+                                            <div class="blog-list-item-content">
+                                                <h5 class="text-darkblue mb-4">Auto-layout explained</h5>
+                                                <p class="text-primary text-primary-color">Jump right in — get an overview of the basics and...</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- blog 2 -->
+                                        <div class="blogs-list-item flex align-c justify-s p-12 px-0 mb-12">
+                                            <img src="./assets/images/blog-2.png" alt="First Blog Image" class="mr-16">
+                                            <div class="blog-list-item-content">
+                                                <h5 class="text-darkblue mb-4">Top techniques to level up your product design</h5>
+                                                <p class="text-primary text-primary-color">The latest best practices and techniques to level up...</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- blog 3 -->
+                                        <div class="blogs-list-item flex align-c justify-s p-12 px-0 mb-12">
+                                            <img src="./assets/images/blog-3.png" alt="First Blog Image" class="mr-16">
+                                            <div class="blog-list-item-content">
+                                                <h5 class="text-darkblue mb-4">Sythesize data like a pro through affinity diagramming</h5>
+                                                <p class="text-primary text-primary-color">Synthesis is the mysterious...</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <a href="javascript:void(0);" class="text-decoration-none inline-flex align-c justify-s px-16 text-secondary text-secondary-color">All blog posts <img src="./assets/images/icons/arrow-right.svg" class="ml-8" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0);">Contact</a></li>
+                </ul>
+            </div>
+            <div class="login-register-wrapper flex">
+                <a href="register.html" class="btn-primary px-16 py-8 mr-8">Register</a>
+                <a href="login.html" class="btn-secondary px-16 py-8">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="bg-white">
+        <div class="container container-xl pt-96 flex flex-c align-c justify-c">
+            <p class="text-center text-secondary text-secondary-color mb-8">Published 20 Jan 2025</p>
+            <h1 class="text-darkblue text-center mb-16">UX review presentations</h1>
+            <p class="text-center container-xl text-primary-lg fw-400 text-primary-color mb-24">How do you create compelling presentations that wow your colleagues and impress your managers?</p>
+            <div class="badges-wrapper gap-8 flex aling-s justify-s mb-60">
+                <span class="badge badge-purple">Research</span>
+                <span class="badge badge-gray">Management</span>
+                <span class="badge badge-green">Self Improvement</span>
+            </div>
+            <img src="./assets/images/blog-detail-page-banner.png" class="w-100">
+        </div>
+    </section>
+
+    <!-- Content section -->
+    <section class="mt-60">
+        <div class="container container-md">
+            
+            <p class="lh-26 text-primary-color mb-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo massa. Eu dolor aliquet risus gravida nunc at feugiat consequat purus. Non massa enim vitae duis mattis. Vel in ultricies vel fringilla.</p>
+            
+            <hr class="mb-48">
+            
+            <h4 class="mb-24 text-darkblue">Introduction</h4>
+            
+            <p class="mb-20 lh-26 text-primary-color">Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum quis montes, sit sit. Tellus aliquam enim urna, etiam. Mauris posuere vulputate arcu amet, vitae nisi, tellus tincidunt. At feugiat sapien varius id.</p>
+            
+            <p class="mb-20 lh-26 text-primary-color">Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. </p>
+            
+            <div class="image-wrapper mb-48">
+                <img src="./assets/images/detail-page-image-second.png" class="mb-8">
+                <small class="text-primary text-primary-color">Image courtesy of Laura Davidson via <a class="text-secondary-color" href="javascript:void(0);">Unsplash</a></small>
+            </div>
+            
+            <div class="quote mb-48">
+                <h5>“In a world older and more complete than ours they move finished and complete, gifted with extensions of the senses we have lost or never attained, living by voices we shall never hear.”</h5>
+                <small class="text-primary text-primary-color">— Olivia Rhye, Product Designer</small>
+            </div>
+
+            <p class="mb-20 lh-26 text-primary-color">Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac vestibulum turpis mi bibendum diam. Tempor integer aliquam in vitae malesuada fringilla.</p>
+
+            <p class="mb-20 lh-26 text-primary-color">Elit nisi in eleifend sed nisi. Pulvinar at orci, proin imperdiet commodo consectetur convallis risus. Sed condimentum enim dignissim adipiscing faucibus consequat, urna. Viverra purus et erat auctor aliquam. Risus, volutpat vulputate posuere purus sit congue convallis aliquet. Arcu id augue ut feugiat donec porttitorMauris, neque ultricies eu vestibulum, bibendum quam lorem id. Dolor lacus, eget nunc lectus in tellus, pharetra, porttitor.</p>
+
+            <p class="mb-48 lh-26 text-primary-color">Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor. Diam elit, orci, tincidunt aenean tempus. Quis velit eget ut tortor tellus. Sed vel, congue felis elit erat nam nibh orci</p>
+
+            <h4 class="mb-24 text-darkblue mb-20">Software & Tools</h4>
+
+            <p class="mb-48 lh-26 text-primary-color">Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit dictumst ut eget a, elementum eu. Maecenas est morbi mattis id in ac pellentesque ac.</p>
+
+            <h4 class="mb-24 text-darkblue mb-20">Other resources</h4>
+
+            <p class="mb-24 lh-26 text-primary-color">Sagittis et eu at elementum, quis in. Proin praesent volutpat egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac. Auctor rutrum lacus malesuada massa ornare et. Vulputate consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu sit dignissim massa erat cursus vulputate gravida id. Sed quis auctor vulputate hac elementum gravida cursus dis.</p>
+
+            <ul class="mb-48">
+                <li>Lectus id duis vitae porttitor enim gravida morbi.</li>
+                <li>Eu turpis posuere semper feugiat volutpat elit, <a href="javascript:void(0):" class="text-secondary-color">ultrices suspendisse</a>. Auctor vel in vitae placerat.</li>
+                <li>Suspendisse maecenas ac donec <a href="javascript:void(0);" class="text-secondary-color">scelerisque</a> diam sed est duis purus.</li>
+            </ul>
+
+            <div class="image-wrapper mb-48">
+                <img src="./assets/images/detail-page-image-second.png" class="mb-8">
+                <small class="text-primary text-primary-color">Image courtesy of Laura Davidson via <a class="text-secondary-color" href="javascript:void(0);">Unsplash</a></small>
+            </div>
+
+            <p class="mb-24 lh-26 text-primary-color">Sagittis et eu at elementum, quis in. Proin praesent volutpat egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac. Auctor rutrum lacus malesuada massa ornare et. Vulputate consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu sit dignissim massa erat cursus vulputate gravida id. Sed quis auctor vulputate hac elementum gravida cursus dis.</p>
+
+            <p class="mb-48 lh-26 text-primary-color">Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit dictumst ut eget a, elementum eu. Maecenas est morbi mattis id in ac pellentesque ac.</p>
+
+            <hr class="mb-48">
+
+            <div class="author-social-wrapper flex align-c justify-b">
+                <div class="author-wrapper flex align-c justify-s">
+                    <img src="./assets/images/icons/avatar-1.svg" height="50" width="50" class="mr-12">
+                    <div class="content flex flex-c align-s justify-c">
+                        <p class="text-darkblue text-primary-md fw-600 mb-4">Demi Thompson</p>
+                        <small class="text-primary-md text-primary-color">17 Jan 2025</small>
+                    </div>
+                </div>
+                <div class="social-icons flex gap-8">
+                    <a href="javascript:void(0);" class="flex align-c justify-c btn-secondary btn-secondary-color px-16 py-8">
+                        <img class="mr-8" src="./assets/images/icons/copy-icon.svg" height="14" width="14"> Copy Link
+                    </a>
+                    <a href="javascript:void(0);" class="flex align-c justify-c btn-secondary btn-secondary-color px-16 py-8">
+                        <img src="./assets/images/icons/x.svg" height="14" width="14">
+                    </a>
+                    <a href="javascript:void(0);" class="flex align-c justify-c btn-secondary btn-secondary-color px-16 py-8" >
+                        <img src="./assets/images/icons/facebook.svg" height="14" width="14">
+                    </a>
+                    <a href="javascript:void(0);" class="flex align-c justify-c btn-secondary btn-secondary-color px-16 py-8">
+                        <img src="./assets/images/icons/linkedin.svg"   height="14" width="14">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mt-120 mb-120">
+        <div class="container container-xl">
+            <h3 class="mb-12">From the blog</h3>
+            <p class="mb-32 text-primary-md text-primary-color">
+                The latest industry news, interviews, technologies, and resources.
+            </p>
+            <div class="grid grid-col-2 grid-row-gap-48 grid-col-gap-32">
+                <div class="card-container" style="position: relative;">
+                    <img src="./assets/images/detail-1.jpg" class="w-100 mb-32">
+                    
+                    <!-- Glass effect overlay -->
+                    <div class="glass-overlay">
+                        <div class="text-left">
+                            <p class="author text-primary-md text-white">Lana Steiner</p>
+                            <p class="date text-primary">18 Jan 2025</p>
+                        </div>
+                        <div class="text-right text-primary-md">Design</div>
+                    </div>
+
+                    <h4 class="mb-12 text-darkblue">UX review presentations</h4>
+                    <p class="mb-32 text-primary-md text-primary-color">How do you create compelling presentations that wow your colleagues and impress your managers?</p>
+                    <div class="read-post flex align-c justify-s">
+                        <a href="javascript:void(0);" class="flex align-c justify-c text-secondary-md text-secondary-color text-decoration-none">
+                            <strong class="mr-8">Read post</strong>
+                            <img src="./assets/images/icons/arrow-up-right-purple.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-container" style="position: relative;">
+                    <img src="./assets/images/detail-2.jpg" class="w-100 mb-32">
+                    
+                    <!-- Glass effect overlay -->
+                    <div class="glass-overlay">
+                        <div class="text-left">
+                            <p class="author text-primary-md text-white">Lana Steiner</p>
+                            <p class="date text-primary">18 Jan 2025</p>
+                        </div>
+                        <div class="text-right text-primary-md">Design</div>
+                    </div>
+
+                    <h4 class="mb-12 text-darkblue">UX review presentations</h4>
+                    <p class="mb-32 text-primary-md text-primary-color">How do you create compelling presentations that wow your colleagues and impress your managers?</p>
+                    <div class="read-post flex align-c justify-s">
+                        <a href="javascript:void(0);" class="flex align-c justify-c text-secondary-md text-secondary-color text-decoration-none">
+                            <strong class="mr-8">Read post</strong>
+                            <img src="./assets/images/icons/arrow-up-right-purple.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-container" style="position: relative;">
+                    <img src="./assets/images/detail-3.jpg" class="w-100 mb-32">
+                    
+                    <!-- Glass effect overlay -->
+                    <div class="glass-overlay">
+                        <div class="text-left">
+                            <p class="author text-primary-md text-white">Lana Steiner</p>
+                            <p class="date text-primary">18 Jan 2025</p>
+                        </div>
+                        <div class="text-right text-primary-md">Design</div>
+                    </div>
+
+                    <h4 class="mb-12 text-darkblue">UX review presentations</h4>
+                    <p class="mb-32 text-primary-md text-primary-color">How do you create compelling presentations that wow your colleagues and impress your managers?</p>
+                    <div class="read-post flex align-c justify-s">
+                        <a href="javascript:void(0);" class="flex align-c justify-c text-secondary-md text-secondary-color text-decoration-none">
+                            <strong class="mr-8">Read post</strong>
+                            <img src="./assets/images/icons/arrow-up-right-purple.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-container" style="position: relative;">
+                    <img src="./assets/images/detail-4.jpg" class="w-100 mb-32">
+                    
+                    <!-- Glass effect overlay -->
+                    <div class="glass-overlay">
+                        <div class="text-left">
+                            <p class="author text-primary-md text-white">Lana Steiner</p>
+                            <p class="date text-primary">18 Jan 2025</p>
+                        </div>
+                        <div class="text-right text-primary-md">Design</div>
+                    </div>
+
+                    <h4 class="mb-12 text-darkblue">UX review presentations</h4>
+                    <p class="mb-32 text-primary-md text-primary-color">How do you create compelling presentations that wow your colleagues and impress your managers?</p>
+                    <div class="read-post flex align-c justify-s">
+                        <a href="javascript:void(0);" class="flex align-c justify-c text-secondary-md text-secondary-color text-decoration-none">
+                            <strong class="mr-8">Read post</strong>
+                            <img src="./assets/images/icons/arrow-up-right-purple.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-gray">
+        <div class="container container-xl pt-64 pb-64 flex flex-c align-c justify-c">
+            <img src="./assets/images/logo.svg" alt="" height="50" width="50" class="mb-40">
+            <h3 class="text-darkblue mb-20">
+                Let’s get started on something great
+            </h3>
+            <p class="text-primary-md text-primary-color mb-40">Find a Talented Developer and start working on something that matters!</p>
+            <div class="buttons-wrapper flex align-c justify-c gap-8">
+                <a href="javascript:void(0);" class="btn-secondary px-16 py-8">
+                    <img src="./assets/images/icons/play-circle-footer.svg" alt="" class="mr-8">
+                    view Demo
+                </a>
+                <a href="javascript:void(0);" class="btn-primary px-16 py-8">
+                    Get started
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-white pt-64 mb-40">
+        <div class="flex align-c justify-b container container-xl pb-64">
+            <div class="footer-first-col">
+                <img src="./assets/images/logo.svg" alt="" class="mb-24">
+                <ul>
+                    <li><a href="javascript:void(0);">Overview</a></li>
+                    <li><a href="javascript:void(0);">Features</a></li>
+                    <li><a href="javascript:void(0);">Pricing</a></li>
+                    <li><a href="javascript:void(0);">Careers</a></li>
+                    <li><a href="javascript:void(0);">Help</a></li>
+                    <li><a href="javascript:void(0);">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-second-col">
+                <h5 class="text-darkblue mb-20">Stay Up to date</h5>
+                <form action="javascript:void(0):" class="flex gap-8">
+                    <input type="text" name="email" id="email" class="px-16 py-12" placeholder="Enter your email">
+                    <button type="submit" class="btn-primary px-16 py-8 flex align-c justify-c">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright-slip flex align-c justify-b border-top container container-xl pt-32">
+            <p class="text-primary-md text-primary-color">© 2077 Untitled UI. All rights reserved.</p>
+            <ul>
+                <li><a href="javascript:void(0);">Terms</a></li>
+                <li><a href="javascript:void(0);">Privacy</a></li>
+                <li><a href="javascript:void(0);">Cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/vgnav.min.js"></script>
+    <script>
+        new VGNav({});
+
+    </script>
+</body>
+</html>

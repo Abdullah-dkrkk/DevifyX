@@ -23,18 +23,18 @@
             <img src="./assets/images/logo.svg" alt="" class="mb-24" height="50" width="50">
             <h3 class="text-darkblue mb-12">Create an Account</h3>
             <p class="text-primary-md text-primary-color">Create an account and start working with us.</p>
-            <form action="javascript:void(0);" class="mt-32">
+            <form action="javascript:void(0);" class="mt-32" id="registerForm">
                 <div class="field-group flex flex-c align-s justify-c">
                     <label for="" class="text-primary-color mb-6">Name*</label>
-                    <input type="text" placeholder="Enter your name" class="mb-20">
+                    <input type="text" name="name" placeholder="Enter your name" class="mb-20" required>
                 </div>
                 <div class="field-group flex flex-c align-s justify-c">
                     <label for="" class="text-primary-color mb-6">Email*</label>
-                    <input type="email" placeholder="Enter your email" class="mb-20">
+                    <input type="email" name="email"  placeholder="Enter your email" class="mb-20" required>
                 </div>
                 <div class="field-group flex flex-c align-s justify-c mb-24">
                     <label for="" class="text-primary-color mb-6">Password*</label>
-                    <input type="password" placeholder="Create a password" class="mb-6">
+                    <input type="password" name="password" placeholder="Create a password" class="mb-6" required>
                     <small class="text-primary text-primary-color">Must be at least 8 characters.</small>
                 </div>
                 
@@ -53,8 +53,13 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/vgnav.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"></script>
     <script>
+        // For initializing the header dropdown using VGNav jQuery plugin
         new VGNav({});
+
+        // For jQuery validation of my Forms
+        jQuery("#registerForm").validate({rules:{email:{required:!0,email:!0},password:{required:!0,minlength:6}},messages:{email:{required:"Please enter your email",email:"Please enter a valid email address"},password:{required:"Please enter your password",minlength:"Your password must be at least 6 characters long"}},errorElement:"div",errorClass:"error-message"});
 
     </script>
 </body>

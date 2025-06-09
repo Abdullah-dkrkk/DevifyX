@@ -3,3 +3,6 @@
 .h-100-vh {height: 100vh;}
 form label {font-weight: 500;font-size: var(--fs-14);line-height: 20px;}
 form input[type="password"],form input {border: 1px solid #D5D7DA; box-shadow: var(--box-shadow-1); padding: 10px 14px; color: #717680;}
+
+/* customizing validation messages */
+input+.error-message{color:#f04438;font-size:14px;letter-spacing:.1px;position:relative;top:-16px}input[type=password]+.error-message+small{display:none}input[type=password]+.error-message{top:-2px}input.error-message,input[type=password].error-message{border-color:#fda29b}
